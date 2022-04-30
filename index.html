@@ -16,7 +16,7 @@
                 <input class="border border-red-700/75 rounded px-4" placeholder="Inserire km da percorrere" type="number" value="user-distance-input" id="user-distance-input">
                 <select class="border border-red-700/75 rounded px-4" id="user-age-input">
                     <option selected disabled hidden value="info">--selezionare fascia d'eta'--</option>
-                    <option value="maggiorenne">MAGGIORENNE</option>
+                    <option value="standard">STANDARD</option>
                     <option value="minorenne">MINORENNE</option>
                     <option value="anziano">ANZIANO (+65)</option>
                 </select> 
@@ -32,18 +32,22 @@
         <div class="flex py-20" id="ticket">
             <div class="w-1/4 p-10 bg-gray-300 text-black" id="ticket-title">BIGLIETTO DEL TRENO DA UN RANDOM BOOLEANER</div>
             <div class="w-3/4 p-10 bg-white" id="ticket-description">
-                    <div class="grid grid-cols-4">
+                    <div class="grid grid-cols-4 text-center ">
                         <div>
-                            <h3 class="uppercase text-center font-bold">Nome utente</h3>
+                            <h3 class="uppercase font-bold">Nome utente</h3>
+                            <div id="user-name"></div>
                         </div>
                         <div>
-                            <h3 class="uppercase text-center font-bold">km</h3>.
+                            <h3 class="uppercase font-bold">km</h3>
+                            <div id="user-distance"></div>
                         </div>
                         <div>
-                            <h3 class="uppercase text-center font-bold">eta</h3>
+                            <h3 class="uppercase font-bold">eta</h3>
+                            <div id="user-age"></div>
                         </div>
                         <div>
                             <h3 class="uppercase text-center font-bold">prezzo finale</h3>
+                            <div id="final-price"></div>
                         </div>
                     </div>
             </div>
