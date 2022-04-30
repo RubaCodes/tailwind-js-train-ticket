@@ -8,6 +8,8 @@ generateButton.addEventListener('click',
         document.getElementById('user-name').innerHTML = userNameInput;
         document.getElementById('user-distance').innerHTML = userDistanceInput;
         document.getElementById('user-age').innerHTML = userAgeInput;
+        const ticket = document.getElementById('ticket');
+        ticket.className = 'flex py-20';
     }
 )
 //refresh biglietto
@@ -17,5 +19,7 @@ refreshButton.addEventListener('click',
         document.getElementById('user-name').innerHTML = '';
         document.getElementById('user-distance').innerHTML = '';
         document.getElementById('user-age').innerHTML = '';
+        const ticket = document.getElementById('ticket');
+        ticket.className = 'hidden';
     }
 )
