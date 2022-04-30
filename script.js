@@ -11,15 +11,12 @@ const underAgeDiscount = 0.8;
 
 //genera biglietto
 const generateButton = document.getElementById('generate');
-generateButton.addEventListener('click', 
-    function(){
+generateButton.addEventListener('click',
+    function () {
         const userNameInput = document.getElementById('user-name-input').value;
         const userDistanceInput = Number(document.getElementById('user-distance-input').value);
         const userAgeInput = document.getElementById('user-age-input').value;
-        // inserimento valori statici
-        document.getElementById('user-name').innerHTML = userNameInput;
-        document.getElementById('user-distance').innerHTML = userDistanceInput;
-        document.getElementById('user-age').innerHTML = userAgeInput;
+
         //calcolo prezzo
         let price;
         if (userAgeInput === overAge) {
@@ -29,7 +26,10 @@ generateButton.addEventListener('click',
         } else {
             price = userDistanceInput * pricePerKm;
         }
-        //set del prezzo sul document
+        // inserimento valori nel document
+        document.getElementById('user-name').innerHTML = userNameInput;
+        document.getElementById('user-distance').innerHTML = userDistanceInput;
+        document.getElementById('user-age').innerHTML = userAgeInput;
         document.getElementById('final-price').innerHTML = price.toFixed(2) + " $"
         //apparizione ticket
         const ticket = document.getElementById('ticket');
@@ -38,11 +38,8 @@ generateButton.addEventListener('click',
 )
 //refresh biglietto
 const refreshButton = document.getElementById('refresh');
-refreshButton.addEventListener('click', 
-    function(){
-        // document.getElementById('user-name').innerHTML = '';
-        // document.getElementById('user-distance').innerHTML = '';
-        // document.getElementById('user-age').innerHTML = '';
+refreshButton.addEventListener('click',
+    function () {
         const ticket = document.getElementById('ticket');
         ticket.className = 'hidden';
     }
