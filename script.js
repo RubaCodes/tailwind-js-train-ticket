@@ -1,5 +1,5 @@
 let userName = document.getElementById('user-name').value;
-let distance = document.getElementById('user-distance').value;
+let distance = Number(document.getElementById('user-distance').value);
 let userAge = document.getElementById('user-age').value;
 
 
