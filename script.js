@@ -19,6 +19,12 @@ generateButton.addEventListener('click',
 const refreshButton = document.getElementById('refresh');
 refreshButton.addEventListener('click', 
     function(){
-        alert('refreshato');
+        userName = "";
+        distance = 0;
+        userAge = "";
+        
+        console.log(userName);
+        console.log(distance);
+        console.log(userAge);
     }
 )
