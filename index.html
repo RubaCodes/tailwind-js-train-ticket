@@ -7,7 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Tailwind ticket generator</title>
 </head>
-<body>
+<body class="bg-red-700">
+    <div class="container mx-auto pt-28">
+        <!-- ticket form -->
+        <div class="bg-white pt-20 pb-16" id="ticket-settings">
+            <div class="flex justify-around" id="ticket-form">
+                <input class="border border-red-700/75 rounded px-4" placeholder="Nome del passeggero" type="text"  id="user-name">
+                <input class="border border-red-700/75 rounded px-4" placeholder="Inserire km da percorrere" type="number" id="user-distance">
+                <select class="border border-red-700/75 rounded px-4" id="user-age">
+                    <option selected disabled hidden value="info">--selezionare fascia d'eta'--</option>
+                    <option value="maggiorenne">MAGGIORENNE</option>
+                    <option value="minorenne">MINORENNE</option>
+                    <option value="anziano">ANZIANO (+65)</option>
+                </select> 
+            </div>  
+            <!-- buttoni -->
+            <div class="flex justify-center pt-16 gap-8 bg-white " id="btn">
+                <button class="bg-red-500 text-white px-4 py-2 border border-black rounded-lg" id="generate">generate</button>
+                <button class="bg-gray-300 text-black px-4 py-2 border border-black rounded-lg" id="refresh">refresh</button>
+            </div>
+
+        </div>
+        <!-- actual ticket -->
+        <div id="ticket">
+            <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores nobis aliquid non hic? Assumenda iusto quis odio vero quasi quos consequuntur autem inventore tempore corporis quibusdam, sapiente facilis dolorum minus! -->
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
