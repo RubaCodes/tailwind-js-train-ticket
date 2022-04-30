@@ -9,7 +9,7 @@ generateButton.addEventListener('click',
         document.getElementById('user-distance').innerHTML = userDistanceInput;
         document.getElementById('user-age').innerHTML = userAgeInput;
         const ticket = document.getElementById('ticket');
-        ticket.className = 'flex py-20';
+        ticket.className = 'flex my-20 rounded-lg overflow-hidden';
     }
 )
 //refresh biglietto

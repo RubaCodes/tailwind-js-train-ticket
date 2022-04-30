@@ -10,9 +10,9 @@
 <body class="bg-red-700">
     <div class="container mx-auto pt-28">
         <!-- ticket form -->
-        <div class="bg-white pt-20 pb-16" id="ticket-settings">
+        <div class="bg-white/75 pt-20 pb-16 rounded-lg" id="ticket-settings">
             <div class="flex justify-around" id="ticket-form">
-                <input class="border border-red-700/75 rounded px-4" placeholder="Nome del passeggero" type="text" value="user-name-input" id="user-name-input">
+                <input class="border border-red-700/75 rounded px-4" placeholder="Nome del passeggero" type="text" value="" id="user-name-input">
                 <input class="border border-red-700/75 rounded px-4" placeholder="Inserire km da percorrere" type="number" value="user-distance-input" id="user-distance-input">
                 <select class="border border-red-700/75 rounded px-4" id="user-age-input">
                     <option selected disabled hidden value="info">--selezionare fascia d'eta'--</option>
@@ -22,31 +22,31 @@
                 </select> 
             </div>  
             <!-- buttoni -->
-            <div class="flex justify-center pt-16 gap-8 bg-white " id="btn">
+            <div class="flex justify-center pt-16 gap-8  " id="btn">
                 <button class="bg-red-500 text-white px-4 py-2 border border-black rounded-lg" id="generate">generate</button>
                 <button class="bg-gray-300 text-black px-4 py-2 border border-black rounded-lg" id="refresh">refresh</button>
             </div>
 
         </div>
         <!-- actual ticket -->
-        <div class="hidden py-20" id="ticket">
+        <div class="hidden " id="ticket">
             <div class="w-1/4 p-10 bg-gray-300 text-black" id="ticket-title">BIGLIETTO DEL TRENO DA UN RANDOM BOOLEANER</div>
             <div class="w-3/4 p-10 bg-white" id="ticket-description">
                     <div class="grid grid-cols-4 text-center ">
                         <div>
-                            <h3 class="uppercase font-bold">Nome utente</h3>
-                            <div id="user-name"></div>
+                            <h3 class="uppercase font-bold pb-5">Nome utente</h3>
+                            <div class="capitalize" id="user-name"></div>
                         </div>
                         <div>
-                            <h3 class="uppercase font-bold">km</h3>
+                            <h3 class="uppercase font-bold pb-5">km</h3>
                             <div id="user-distance"></div>
                         </div>
                         <div>
-                            <h3 class="uppercase font-bold">eta</h3>
+                            <h3 class="uppercase font-bold pb-5">eta</h3>
                             <div id="user-age"></div>
                         </div>
                         <div>
-                            <h3 class="uppercase text-center font-bold">prezzo finale</h3>
+                            <h3 class="uppercase text-center font-bold pb-5">prezzo finale</h3>
                             <div id="final-price"></div>
                         </div>
                     </div>
