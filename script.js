@@ -1,7 +1,7 @@
 //hook dei lavori dei form
-let userName = document.getElementById('user-name').value;
-let distance = Number(document.getElementById('user-distance').value);
-let userAge = document.getElementById('user-age').value;
+let userName = document.getElementById('user-name-input').value;
+let distance = Number(document.getElementById('user-distance-input').value);
+let userAge = document.getElementById('user-age-input').value;
 
 console.log(userName);
 console.log(distance);

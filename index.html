@@ -12,9 +12,9 @@
         <!-- ticket form -->
         <div class="bg-white pt-20 pb-16" id="ticket-settings">
             <div class="flex justify-around" id="ticket-form">
-                <input class="border border-red-700/75 rounded px-4" placeholder="Nome del passeggero" type="text" value="user-name" id="user-name">
-                <input class="border border-red-700/75 rounded px-4" placeholder="Inserire km da percorrere" type="number" value="user-distance" id="user-distance">
-                <select class="border border-red-700/75 rounded px-4" id="user-age">
+                <input class="border border-red-700/75 rounded px-4" placeholder="Nome del passeggero" type="text" value="user-name-input" id="user-name-input">
+                <input class="border border-red-700/75 rounded px-4" placeholder="Inserire km da percorrere" type="number" value="user-distance-input" id="user-distance-input">
+                <select class="border border-red-700/75 rounded px-4" id="user-age-input">
                     <option selected disabled hidden value="info">--selezionare fascia d'eta'--</option>
                     <option value="maggiorenne">MAGGIORENNE</option>
                     <option value="minorenne">MINORENNE</option>
@@ -31,8 +31,21 @@
         <!-- actual ticket -->
         <div class="flex py-20" id="ticket">
             <div class="w-1/4 p-10 bg-gray-300 text-black" id="ticket-title">BIGLIETTO DEL TRENO DA UN RANDOM BOOLEANER</div>
-            <div class="w-3/4 p-10" id="ticket-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat illum tenetur laboriosam ipsam voluptates eaque eius sapiente incidunt, temporibus tempora culpa delectus neque ea reiciendis unde impedit aliquid perferendis?
+            <div class="w-3/4 p-10 bg-white" id="ticket-description">
+                    <div class="grid grid-cols-4">
+                        <div>
+                            <h3 class="uppercase text-center font-bold">Nome utente</h3>
+                        </div>
+                        <div>
+                            <h3 class="uppercase text-center font-bold">km</h3>.
+                        </div>
+                        <div>
+                            <h3 class="uppercase text-center font-bold">eta</h3>
+                        </div>
+                        <div>
+                            <h3 class="uppercase text-center font-bold">prezzo finale</h3>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
