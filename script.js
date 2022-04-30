@@ -3,8 +3,8 @@ const pricePerKm = 0.21;
 
 
 //parametri sconto
-const overAge = 'elder';
-const underAge = 'minorenne';
+const overAge = 'Elder';
+const underAge = 'Minorenne';
 const overAgeDiscount = 0.6;
 const underAgeDiscount = 0.8;
 
