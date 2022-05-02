@@ -40,9 +40,11 @@ generateButton.addEventListener('click',
 const refreshButton = document.getElementById('refresh');
 refreshButton.addEventListener('click',
     function () {
+        // flush user input
         document.getElementById('user-name-input').value ="";
         document.getElementById('user-distance-input').value = "";
         document.getElementById('user-age-input').selectedIndex = "0";
+        //hide ticket
         const ticket = document.getElementById('ticket');
         ticket.className = 'hidden';
     }
